@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Uma Devi & Giridhar Goud | Wedding Invitation</title>
+  <title>Giridhar Goud & Uma Devi | Wedding Invitation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -112,11 +112,12 @@
     }
 
     .intro-kicker{
-      color:var(--muted);
-      font-size:.78rem;
-      letter-spacing:.38em;
+      color:var(--gold-soft);
+      font-size:.9rem;
+      letter-spacing:.24em;
       text-transform:uppercase;
       margin-bottom:18px;
+      line-height:1.8;
     }
 
     .intro-ganesha{
@@ -302,6 +303,38 @@
       opacity:.92;
       line-height:1.85;
       font-size:1rem;
+    }
+
+    .invite-family{
+      margin:28px auto 0;
+      max-width:800px;
+      padding:22px 20px;
+      border-radius:22px;
+      background:linear-gradient(180deg, rgba(255,252,246,.88), rgba(244,235,219,.72));
+      border:1px solid rgba(179,152,98,.16);
+      text-align:center;
+    }
+
+    .invite-family .label{
+      text-transform:uppercase;
+      letter-spacing:.24em;
+      font-size:.72rem;
+      color:var(--muted);
+      margin-bottom:10px;
+    }
+
+    .invite-family .names{
+      font-family:'Cinzel',serif;
+      font-size:1.15rem;
+      line-height:1.8;
+      color:#786847;
+      margin-bottom:10px;
+    }
+
+    .invite-family .phones{
+      color:#7d7052;
+      line-height:1.8;
+      font-size:0.98rem;
     }
 
     .ornament{
@@ -631,6 +664,7 @@
       .ornament::before,.ornament::after{width:64px}
       .tool-btn{padding:9px 12px;font-size:.82rem}
       .big-location-btn{width:100%}
+      .invite-family .names{font-size:1rem}
     }
   </style>
 </head>
@@ -639,14 +673,14 @@
 
   <div class="overlay" id="introGate">
     <div class="overlay-card">
-      <div class="intro-kicker" data-en="Wedding Invitation" data-te="వివాహ ఆహ్వానం">Wedding Invitation</div>
+      <div class="intro-kicker" data-en="Katamoni's Wedding Invitation" data-te="కాటమోని వారి వివాహ ఆహ్వానం">Katamoni's Wedding Invitation</div>
       <div class="intro-ganesha">🕉️</div>
       <h1 class="intro-title" data-en="A Celebration of Love, Grace & Forever" data-te="ప్రేమ, కరుణ మరియు శాశ్వత బంధానికి ఒక అందమైన ఆహ్వానం">A Celebration of Love, Grace & Forever</h1>
-      <p class="intro-sub" data-en="With the blessings of Lord Ganesha and our beloved families, we warmly invite you to witness the beginning of our beautiful journey together." data-te="శ్రీ వినాయకుని ఆశీస్సులతో మరియు మా కుటుంబాల ప్రేమతో, మా కొత్త జీవిత ప్రారంభానికి మీరు విచ్చేసి మమ్మల్ని ఆశీర్వదించమని ఆహ్వానిస్తున్నాము.">
-        With the blessings of Lord Ganesha and our beloved families, we warmly invite you to witness the beginning of our beautiful journey together.
+      <p class="intro-sub" data-en="With the blessings of our beloved families, we warmly invite you to witness the beginning of this beautiful journey together." data-te="మా కుటుంబ సభ్యుల ఆశీస్సులతో, ఈ అందమైన కొత్త జీవిత ప్రారంభానికి మీరు విచ్చేసి మమ్మల్ని ఆశీర్వదించమని ఆహ్వానిస్తున్నాము.">
+        With the blessings of our beloved families, we warmly invite you to witness the beginning of this beautiful journey together.
       </p>
       <div class="seal-wrap">
-        <button class="seal" id="openInvite" aria-label="Open invitation"><span>UG</span></button>
+        <button class="seal" id="openInvite" aria-label="Open invitation"><span>GU</span></button>
       </div>
       <div class="tap-text" data-en="Tap the seal to open" data-te="ఆహ్వానాన్ని తెరవడానికి ముద్రపై నొక్కండి">Tap the seal to open</div>
     </div>
@@ -663,11 +697,21 @@
           <div class="hero-top">
             <div class="eyebrow" data-en="Together with their families" data-te="తమ కుటుంబ సభ్యులతో కలిసి">Together with their families</div>
             <div class="blessing" data-en="Request the honour of your presence" data-te="మీ సాన్నిధ్యం కోరుచున్నారు">Request the honour of your presence</div>
-            <h1 class="couple" data-en="Uma Devi <br>&amp; Giridhar Goud" data-te="ఉమా దేవి <br>&amp; గిరిధర్ గౌడ్">Uma Devi <br>&amp; Giridhar Goud</h1>
+            <h1 class="couple" data-en="Giridhar Goud <br>&amp; Uma Devi" data-te="గిరిధర్ గౌడ్ <br>&amp; ఉమా దేవి">Giridhar Goud <br>&amp; Uma Devi</h1>
             <div class="ornament">✦</div>
             <p class="hero-copy" data-en="Join us for an unforgettable celebration as two hearts, two families, and two journeys become one in a moment of love, joy, and timeless tradition." data-te="ప్రేమ, ఆనందం మరియు సంప్రదాయాల సాక్షిగా రెండు హృదయాలు, రెండు కుటుంబాలు, రెండు ప్రయాణాలు ఒక్కటయ్యే ఈ మధుర వేడుకకు విచ్చేసి మమ్మల్ని ఆశీర్వదించండి.">
               Join us for an unforgettable celebration as two hearts, two families, and two journeys become one in a moment of love, joy, and timeless tradition.
             </p>
+
+            <div class="invite-family">
+              <div class="label" data-en="Inviting By" data-te="ఆహ్వానించువారు">Inviting By</div>
+              <div class="names" data-en="SMT. Katamoni Savitramma &amp; Sri. Katamoni Ayyanna Goud" data-te="శ్రీమతి కాటమోని సావిత్రమ్మ &amp; శ్రీ కాటమోని అయ్యన్న గౌడ్">
+                SMT. Katamoni Savitramma &amp; Sri. Katamoni Ayyanna Goud
+              </div>
+              <div class="phones" data-en="Cell: 9666987503, 8639340526" data-te="సెల్: 9666987503, 8639340526">
+                Cell: 9666987503, 8639340526
+              </div>
+            </div>
           </div>
 
           <div class="meta-grid">
@@ -703,15 +747,15 @@
               <p data-en="With hearts full of gratitude and joy, we invite you to be part of our wedding celebration. Your presence will add warmth, blessings, and unforgettable beauty to our most special day." data-te="కృతజ్ఞత మరియు ఆనందంతో నిండిన హృదయాలతో, మా వివాహ వేడుకకు మిమ్మల్ని ఆహ్వానిస్తున్నాము. మీ సాన్నిధ్యం మా జీవితంలోని ఈ ప్రత్యేక రోజును మరింత అందంగా మార్చుతుంది.">
                 With hearts full of gratitude and joy, we invite you to be part of our wedding celebration. Your presence will add warmth, blessings, and unforgettable beauty to our most special day.
               </p>
-              <p data-en="Please join us as we begin our new life together surrounded by love, laughter, sacred rituals, and the blessings of our elders, friends, and family." data-te="పెద్దలు, కుటుంబ సభ్యులు, బంధువులు, మిత్రుల ఆశీస్సులతో మా కొత్త జీవితాన్ని ప్రారంభించే ఈ శుభ వేడుకకు మీరు విచ్చేసి మమ్మల్ని ఆశీర్వదించమని మనవి.">
-                Please join us as we begin our new life together surrounded by love, laughter, sacred rituals, and the blessings of our elders, friends, and family.
+              <p data-en="Please join us as we begin our new life together surrounded by love, laughter, traditions, and the blessings of our elders, friends, and family." data-te="పెద్దలు, కుటుంబ సభ్యులు, బంధువులు, మిత్రుల ఆశీస్సులతో మా కొత్త జీవితాన్ని ప్రారంభించే ఈ శుభ వేడుకకు మీరు విచ్చేసి మమ్మల్ని ఆశీర్వదించమని మనవి.">
+                Please join us as we begin our new life together surrounded by love, laughter, traditions, and the blessings of our elders, friends, and family.
               </p>
             </div>
             <div class="ganesha-box">
               <div>
                 <div class="ganesha-icon">🪔</div>
-                <div class="ganesha-text" data-en="In the divine presence of Lord Ganesha, may this union be filled with peace, prosperity, happiness, and everlasting togetherness." data-te="శ్రీ వినాయకుని కరుణాకటాక్షంతో ఈ దాంపత్య జీవితం శాంతి, సంపద, సంతోషం మరియు శాశ్వత ఆనందంతో నిండిపోవాలని కోరుకుంటున్నాము.">
-                  In the divine presence of Lord Ganesha, may this union be filled with peace, prosperity, happiness, and everlasting togetherness.
+                <div class="ganesha-text" data-en="May this union be filled with peace, prosperity, happiness, and everlasting togetherness." data-te="ఈ దాంపత్య జీవితం శాంతి, సంపద, సంతోషం మరియు శాశ్వత ఆనందంతో నిండిపోవాలని కోరుకుంటున్నాము.">
+                  May this union be filled with peace, prosperity, happiness, and everlasting togetherness.
                 </div>
               </div>
             </div>
@@ -836,10 +880,10 @@
 
     shareBtn.addEventListener('click', async () => {
       const shareData = {
-        title: 'Uma Devi & Giridhar Goud Wedding Invitation',
+        title: 'Giridhar Goud & Uma Devi Wedding Invitation',
         text: currentLang === 'en'
-          ? 'You are warmly invited to celebrate the wedding of Uma Devi & Giridhar Goud.'
-          : 'ఉమా దేవి & గిరిధర్ గౌడ్ వివాహానికి ఆహ్వానం.',
+          ? 'You are warmly invited to celebrate the wedding of Giridhar Goud & Uma Devi.'
+          : 'గిరిధర్ గౌడ్ & ఉమా దేవి వివాహానికి ఆహ్వానం.',
         url: window.location.href
       };
 
