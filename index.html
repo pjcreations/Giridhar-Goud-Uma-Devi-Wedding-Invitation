@@ -9,16 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#07150f;
-      --bg-soft:#0d2018;
-      --card:rgba(255,255,255,0.08);
-      --card-strong:rgba(255,255,255,0.12);
-      --gold:#d8b56a;
-      --gold-soft:#f0dfb1;
-      --ivory:#f8f3e7;
-      --muted:#d3c8ae;
-      --line:rgba(216,181,106,0.28);
-      --shadow:0 20px 60px rgba(0,0,0,0.35);
+      --bg:#f5efe3;
+      --bg-soft:#ece2d0;
+      --card:rgba(255,255,255,0.72);
+      --card-strong:rgba(255,255,255,0.84);
+      --gold:#b39862;
+      --gold-soft:#d7be86;
+      --ivory:#fffaf1;
+      --muted:#9b8a63;
+      --line:rgba(179,152,98,0.26);
+      --shadow:0 18px 45px rgba(116,95,62,0.14);
       --radius:28px;
     }
 
@@ -27,10 +27,10 @@
     body{
       font-family:'Inter',sans-serif;
       background:
-        radial-gradient(circle at top, rgba(216,181,106,0.08), transparent 28%),
-        radial-gradient(circle at bottom right, rgba(216,181,106,0.06), transparent 22%),
-        linear-gradient(145deg,#041009 0%, #081711 35%, #0b1d16 70%, #07150f 100%);
-      color:var(--ivory);
+        radial-gradient(circle at top, rgba(215,190,134,0.18), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(186,162,109,0.12), transparent 24%),
+        linear-gradient(145deg,#f9f3e8 0%, #f3eadb 40%, #efe4d2 72%, #f7f0e5 100%);
+      color:#6f6042;
       overflow-x:hidden;
       min-height:100vh;
     }
@@ -41,10 +41,10 @@
       inset:0;
       pointer-events:none;
       background:
-        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+        linear-gradient(rgba(179,152,98,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(179,152,98,0.035) 1px, transparent 1px);
       background-size:42px 42px;
-      opacity:.18;
+      opacity:.2;
       mask-image:radial-gradient(circle at center, black 35%, transparent 100%);
     }
 
@@ -246,10 +246,11 @@
 
     .hero-panel{
       width:100%;
-      border:1px solid rgba(216,181,106,.22);
+      border:1px solid rgba(179,152,98,.24);
       border-radius:40px;
-      background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      backdrop-filter:blur(16px);
+      background:
+        linear-gradient(180deg, rgba(255,251,244,.92), rgba(249,242,231,.84));
+      backdrop-filter:blur(10px);
       box-shadow:var(--shadow);
       padding:clamp(28px,5vw,60px);
       position:relative;
@@ -261,7 +262,7 @@
       position:absolute;
       inset:18px;
       border-radius:28px;
-      border:1px solid rgba(216,181,106,.12);
+      border:1px solid rgba(179,152,98,.16);
       pointer-events:none;
     }
 
@@ -274,14 +275,14 @@
       font-size:.76rem;
       letter-spacing:.4em;
       text-transform:uppercase;
-      color:var(--muted);
+      color:#9b8a63;
       margin-bottom:14px;
     }
 
     .blessing{
       font-family:'Great Vibes',cursive;
       font-size:clamp(1.9rem,4.6vw,3.4rem);
-      color:var(--gold-soft);
+      color:#b39862;
       margin-bottom:10px;
     }
 
@@ -289,16 +290,16 @@
       font-family:'Cinzel',serif;
       font-size:clamp(2.5rem,7vw,5.7rem);
       line-height:1.06;
-      color:var(--ivory);
+      color:#7b6a47;
       margin-bottom:16px;
-      text-shadow:0 10px 30px rgba(0,0,0,.22);
+      text-shadow:none;
     }
 
     .hero-copy{
       max-width:760px;
       margin:0 auto;
-      color:#f4eddc;
-      opacity:.88;
+      color:#7f7152;
+      opacity:.92;
       line-height:1.85;
       font-size:1rem;
     }
@@ -329,8 +330,8 @@
 
     .meta-card{
       padding:24px 20px;
-      background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
-      border:1px solid rgba(216,181,106,.14);
+      background:linear-gradient(180deg, rgba(255,252,246,.85), rgba(244,235,219,.72));
+      border:1px solid rgba(179,152,98,.16);
       border-radius:24px;
       text-align:center;
     }
@@ -347,7 +348,7 @@
       font-family:'Cinzel',serif;
       font-size:1.15rem;
       line-height:1.7;
-      color:var(--ivory);
+      color:#786847;
     }
 
     section{
@@ -356,8 +357,8 @@
     }
 
     .section-card{
-      background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
-      border:1px solid rgba(216,181,106,.18);
+      background:linear-gradient(180deg, rgba(255,251,244,.88), rgba(246,238,225,.8));
+      border:1px solid rgba(179,152,98,.18);
       border-radius:32px;
       padding:30px;
       box-shadow:var(--shadow);
@@ -379,13 +380,13 @@
     .section-title{
       font-family:'Cinzel',serif;
       font-size:clamp(1.7rem,4vw,2.8rem);
-      color:var(--ivory);
+      color:#7b6a47;
       margin-bottom:10px;
     }
 
     .section-sub{
-      color:#efe7d4;
-      opacity:.86;
+      color:#817252;
+      opacity:.9;
       max-width:750px;
       margin:0 auto;
       line-height:1.8;
@@ -400,13 +401,15 @@
     .story-box, .ganesha-box{
       padding:26px;
       border-radius:26px;
-      background:rgba(255,255,255,.03);
-      border:1px solid rgba(216,181,106,.12);
+      background:
+        radial-gradient(circle at top, rgba(215,190,134,.22), transparent 38%),
+        rgba(255,249,239,.78);
+      border:1px solid rgba(179,152,98,.12);
       min-height:100%;
     }
 
     .story-box p{
-      color:#f2ead8;
+      color:#7d7052;
       line-height:1.95;
       margin-bottom:16px;
     }
@@ -430,7 +433,7 @@
     .ganesha-text{
       font-family:'Cinzel',serif;
       line-height:1.9;
-      color:#f6efdf;
+      color:#7c6d4a;
     }
 
     .timeline{
@@ -442,8 +445,8 @@
     .timeline-card{
       border-radius:24px;
       padding:24px;
-      border:1px solid rgba(216,181,106,.13);
-      background:rgba(255,255,255,.03);
+      border:1px solid rgba(179,152,98,.13);
+      background:rgba(255,250,242,.78);
       position:relative;
       overflow:hidden;
     }
@@ -471,12 +474,12 @@
       font-family:'Cinzel',serif;
       font-size:1.22rem;
       margin-bottom:12px;
-      color:var(--ivory);
+      color:#7b6a47;
     }
 
     .timeline-text{
-      color:#ece2cb;
-      opacity:.88;
+      color:#817252;
+      opacity:.92;
       line-height:1.8;
     }
 
@@ -488,23 +491,29 @@
     }
 
     .venue-card, .map-card{
-      background:rgba(255,255,255,.03);
-      border:1px solid rgba(216,181,106,.12);
-      border-radius:26px;
       padding:28px;
+      border:1px solid rgba(179,152,98,.12);
+      border-radius:26px;
+      background:
+        radial-gradient(circle at center, rgba(215,190,134,.16), transparent 42%),
+        rgba(255,249,239,.82);
+      min-height:280px;
+      text-align:center;
+      display:grid;
+      place-items:center;
     }
 
     .venue-name{
       font-family:'Cinzel',serif;
       font-size:1.7rem;
       margin-bottom:10px;
-      color:var(--ivory);
+      color:#7b6a47;
     }
 
     .venue-text{
-      color:#efe7d4;
+      color:#817252;
       line-height:1.9;
-      opacity:.9;
+      opacity:.92;
       margin-bottom:16px;
     }
 
@@ -512,6 +521,7 @@
       display:flex;
       gap:14px;
       flex-wrap:wrap;
+      justify-content:center;
       margin-top:18px;
     }
 
@@ -524,33 +534,31 @@
       min-height:50px;
       padding:0 18px;
       border-radius:999px;
-      border:1px solid rgba(216,181,106,.22);
-      color:var(--ivory);
-      background:rgba(255,255,255,.04);
+      border:1px solid rgba(179,152,98,.22);
+      color:#7a6a49;
+      background:rgba(255,252,246,.88);
       transition:all .3s ease;
       cursor:pointer;
       font-weight:500;
     }
 
-    .btn:hover{transform:translateY(-2px); background:rgba(216,181,106,.12)}
+    .btn:hover{transform:translateY(-2px); background:rgba(215,190,134,.18)}
 
     .btn-primary{
-      background:linear-gradient(135deg, #e8c777, #b48534);
-      color:#332005;
+      background:linear-gradient(135deg, #6f8f4a, #4e6b2f);
+      color:#fffdf7;
       border:none;
-      box-shadow:0 10px 30px rgba(216,181,106,.22);
+      box-shadow:0 10px 24px rgba(111,143,74,.22);
     }
 
-    .btn-primary:hover{background:linear-gradient(135deg,#f1d58d,#c7943f)}
+    .btn-primary:hover{background:linear-gradient(135deg,#7fa35a,#5c7a3b)}
 
-    .map-card{
-      display:grid;
-      place-items:center;
-      text-align:center;
-      background:
-        radial-gradient(circle at center, rgba(216,181,106,.14), transparent 42%),
-        rgba(255,255,255,.03);
-      min-height:280px;
+    .big-location-btn{
+      min-height:64px;
+      padding:0 30px;
+      font-size:1.08rem;
+      font-weight:600;
+      border-radius:999px;
     }
 
     .map-pin{
@@ -559,7 +567,7 @@
     }
 
     .map-copy{
-      color:#f5eddc;
+      color:#7c6e50;
       max-width:320px;
       line-height:1.85;
       margin-bottom:18px;
@@ -571,8 +579,8 @@
     }
 
     .footer-box{
-      border:1px solid rgba(216,181,106,.18);
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid rgba(179,152,98,.18);
+      background:linear-gradient(180deg, rgba(255,251,244,.88), rgba(247,239,227,.78));
       border-radius:30px;
       padding:34px 24px;
       box-shadow:var(--shadow);
@@ -589,8 +597,8 @@
       max-width:720px;
       margin:0 auto;
       line-height:1.95;
-      color:#f4eddc;
-      opacity:.9;
+      color:#7e7154;
+      opacity:.94;
     }
 
     .reveal{
@@ -622,6 +630,7 @@
       .meta-card,.timeline-card,.venue-card,.map-card,.story-box,.ganesha-box{padding:20px}
       .ornament::before,.ornament::after{width:64px}
       .tool-btn{padding:9px 12px;font-size:.82rem}
+      .big-location-btn{width:100%}
     }
   </style>
 </head>
@@ -645,12 +654,7 @@
 
   <div class="toolbar">
     <button class="tool-btn" id="langToggle">తెలుగు</button>
-    <button class="tool-btn" id="musicToggle">Music Off</button>
   </div>
-
-  <audio id="bgMusic" loop>
-    <source src="" type="audio/mpeg">
-  </audio>
 
   <main class="main" id="mainContent">
     <section class="hero">
@@ -669,15 +673,15 @@
           <div class="meta-grid">
             <div class="meta-card">
               <div class="meta-label" data-en="Wedding Date" data-te="వివాహ తేదీ">Wedding Date</div>
-              <div class="meta-value" data-en="Sunday, 12 December 2026" data-te="ఆదివారం, 12 డిసెంబర్ 2026">Sunday, 12 December 2026</div>
+              <div class="meta-value" data-en="Sunday, 3rd May 2026" data-te="ఆదివారం, 3 మే 2026">Sunday, 3rd May 2026</div>
             </div>
             <div class="meta-card">
               <div class="meta-label" data-en="Muhurtam" data-te="ముహూర్తం">Muhurtam</div>
-              <div class="meta-value" data-en="10:45 AM" data-te="ఉదయం 10:45">10:45 AM</div>
+              <div class="meta-value" data-en="10:14 AM in Meedhuna Lagnam" data-te="ఉదయం 10:14 మీధున లగ్నం">10:14 AM in Meedhuna Lagnam</div>
             </div>
             <div class="meta-card">
               <div class="meta-label" data-en="Venue" data-te="వేదిక">Venue</div>
-              <div class="meta-value" data-en="Sri Lakshmi Convention Hall" data-te="శ్రీ లక్ష్మి కన్వెన్షన్ హాల్">Sri Lakshmi Convention Hall</div>
+              <div class="meta-value" data-en="Vallapu Reddy Ram Reddy Function Hall" data-te="వల్లపు రెడ్డి రామ్ రెడ్డి ఫంక్షన్ హాల్">Vallapu Reddy Ram Reddy Function Hall</div>
             </div>
           </div>
         </div>
@@ -688,7 +692,7 @@
       <div class="container">
         <div class="section-card reveal">
           <div class="section-head">
-            <div class="section-kicker" data-en="Sacred Beginning" data-te="శుభారంభం">Sacred Beginning</div>
+            <div class="section-kicker" data-en="Beginning" data-te="శుభారంభం">Beginning</div>
             <h2 class="section-title" data-en="With Blessings & Grace" data-te="ఆశీస్సులతో మరియు కరుణతో">With Blessings & Grace</h2>
             <p class="section-sub" data-en="Every wedding is a story written in blessings, tradition, and love. We would be delighted to celebrate this cherished moment with your presence." data-te="ప్రతి వివాహం ఆశీస్సులు, సంప్రదాయం మరియు ప్రేమతో నిండిన ఒక అందమైన కథ. ఈ ఆప్యాయ క్షణాన్ని మీ సాన్నిధ్యంతో మరింత ప్రత్యేకంగా చేయండి.">
               Every wedding is a story written in blessings, tradition, and love. We would be delighted to celebrate this cherished moment with your presence.
@@ -722,8 +726,8 @@
           <div class="section-head">
             <div class="section-kicker" data-en="Celebration Flow" data-te="వేడుక క్రమం">Celebration Flow</div>
             <h2 class="section-title" data-en="Wedding Day Timeline" data-te="వివాహ దిన కార్యక్రమాలు">Wedding Day Timeline</h2>
-            <p class="section-sub" data-en="A thoughtfully curated day of sacred traditions, heartfelt moments, and joyful celebration." data-te="పవిత్ర ఆచారాలు, హృదయాన్ని తాకే క్షణాలు మరియు ఆనందభరిత వేడుకలతో అలంకరించిన ఒక అందమైన రోజు.">
-              A thoughtfully curated day of sacred traditions, heartfelt moments, and joyful celebration.
+            <p class="section-sub" data-en="A thoughtfully curated day of heartfelt moments and joyful celebration." data-te="హృదయాన్ని తాకే క్షణాలు మరియు ఆనందభరిత వేడుకలతో అలంకరించిన ఒక అందమైన రోజు.">
+              A thoughtfully curated day of heartfelt moments and joyful celebration.
             </p>
           </div>
           <div class="timeline">
@@ -735,8 +739,8 @@
               </div>
             </div>
             <div class="timeline-card">
-              <div class="timeline-time" data-en="10:45 AM" data-te="ఉదయం 10:45">10:45 AM</div>
-              <div class="timeline-title" data-en="Sacred Muhurtam" data-te="శుభ ముహూర్తం">Sacred Muhurtam</div>
+              <div class="timeline-time" data-en="10:14 AM" data-te="ఉదయం 10:14">10:14 AM</div>
+              <div class="timeline-title" data-en="Muhurtam – Meedhuna Lagnam" data-te="ముహూర్తం – మీధున లగ్నం">Muhurtam – Meedhuna Lagnam</div>
               <div class="timeline-text" data-en="The auspicious moment where two souls begin a beautiful life together." data-te="రెండు హృదయాలు శాశ్వత బంధంలో అడుగుపెట్టే మంగళ క్షణం.">
                 The auspicious moment where two souls begin a beautiful life together.
               </div>
@@ -759,28 +763,30 @@
           <div class="section-head">
             <div class="section-kicker" data-en="Venue & Access" data-te="వేదిక మరియు దారి">Venue & Access</div>
             <h2 class="section-title" data-en="Come Celebrate With Us" data-te="మా ఆనంద వేడుకకు విచ్చేయండి">Come Celebrate With Us</h2>
-            <p class="section-sub" data-en="We look forward to welcoming you to a venue filled with love, laughter, and sacred celebration." data-te="ప్రేమ, ఆనందం మరియు పవిత్రత నిండిన ఈ వేదికకు మీరు విచ్చేయాలని మనస్ఫూర్తిగా కోరుకుంటున్నాము.">
-              We look forward to welcoming you to a venue filled with love, laughter, and sacred celebration.
+            <p class="section-sub" data-en="We look forward to welcoming you to a venue filled with love, laughter, and celebration." data-te="ప్రేమ, ఆనందం నిండిన ఈ వేదికకు మీరు విచ్చేయాలని మనస్ఫూర్తిగా కోరుకుంటున్నాము.">
+              We look forward to welcoming you to a venue filled with love, laughter, and celebration.
             </p>
           </div>
           <div class="location-grid">
             <div class="venue-card">
-              <div class="venue-name" data-en="Sri Lakshmi Convention Hall" data-te="శ్రీ లక్ష్మి కన్వెన్షన్ హాల్">Sri Lakshmi Convention Hall</div>
-              <div class="venue-text" data-en="Hyderabad, Telangana, India. Please tap the map button below for directions and easy navigation to the venue." data-te="హైదరాబాద్, తెలంగాణ, భారతదేశం. వేదికకు చేరుకోవడానికి క్రింది మ్యాప్ బటన్‌ను నొక్కండి.">
-                Hyderabad, Telangana, India. Please tap the map button below for directions and easy navigation to the venue.
-              </div>
-              <div class="cta-row">
-                <a class="btn btn-primary" href="https://maps.google.com" target="_blank" rel="noopener" data-en="Open Location" data-te="లొకేషన్ తెరవండి">Open Location</a>
-                <button class="btn" id="shareBtn" data-en="Share Invitation" data-te="ఆహ్వానం పంచుకోండి">Share Invitation</button>
+              <div>
+                <div class="venue-name" data-en="Vallapu Reddy Ram Reddy Function Hall" data-te="వల్లపు రెడ్డి రామ్ రెడ్డి ఫంక్షన్ హాల్">Vallapu Reddy Ram Reddy Function Hall</div>
+                <div class="venue-text" data-en="Venue: Vallapu Reddy Ram Reddy Function Hall, Kanchiraopally Road, PEBBAIR, Wanaparthy Dist." data-te="వేదిక: వల్లపు రెడ్డి రామ్ రెడ్డి ఫంక్షన్ హాల్, కంచిరావుపల్లి రోడ్, పెబ్బైర్, వనపర్తి జిల్లా.">
+                  Venue: Vallapu Reddy Ram Reddy Function Hall, Kanchiraopally Road, PEBBAIR, Wanaparthy Dist.
+                </div>
+                <div class="cta-row">
+                  <a class="btn btn-primary big-location-btn" href="https://maps.google.com/?q=Vallapu+Reddy+Ram+Reddy+Function+Hall+Kanchiraopally+Road+PEBBAIR+Wanaparthy+Dist" target="_blank" rel="noopener" data-en="Open Location" data-te="లొకేషన్ తెరవండి">Open Location</a>
+                  <button class="btn" id="shareBtn" data-en="Share Invitation" data-te="ఆహ్వానం పంచుకోండి">Share Invitation</button>
+                </div>
               </div>
             </div>
             <div class="map-card">
               <div>
                 <div class="map-pin">📍</div>
-                <div class="map-copy" data-en="Tap to navigate directly to the celebration venue and join us on time for the auspicious ceremony." data-te="శుభ ముహూర్తానికి సమయానికి చేరుకోవడానికి లొకేషన్‌ను తెరచి దారి తెలుసుకోండి.">
-                  Tap to navigate directly to the celebration venue and join us on time for the auspicious ceremony.
+                <div class="map-copy" data-en="Tap below to navigate directly to the venue and arrive on time for the auspicious ceremony." data-te="శుభ ముహూర్తానికి సమయానికి చేరుకోవడానికి క్రింద నొక్కి దారి తెలుసుకోండి.">
+                  Tap below to navigate directly to the venue and arrive on time for the auspicious ceremony.
                 </div>
-                <a class="btn" href="https://maps.google.com" target="_blank" rel="noopener" data-en="Get Directions" data-te="దారి తెలుసుకోండి">Get Directions</a>
+                <a class="btn big-location-btn" href="https://maps.google.com/?q=Vallapu+Reddy+Ram+Reddy+Function+Hall+Kanchiraopally+Road+PEBBAIR+Wanaparthy+Dist" target="_blank" rel="noopener" data-en="Get Directions" data-te="దారి తెలుసుకోండి">Get Directions</a>
               </div>
             </div>
           </div>
@@ -804,14 +810,11 @@
     const introGate = document.getElementById('introGate');
     const openInvite = document.getElementById('openInvite');
     const mainContent = document.getElementById('mainContent');
-    const musicToggle = document.getElementById('musicToggle');
-    const bgMusic = document.getElementById('bgMusic');
     const langToggle = document.getElementById('langToggle');
     const shareBtn = document.getElementById('shareBtn');
     const translatable = document.querySelectorAll('[data-en]');
 
     let currentLang = 'en';
-    let musicOn = false;
 
     openInvite.addEventListener('click', () => {
       introGate.classList.add('hidden');
@@ -827,35 +830,9 @@
         el.innerHTML = el.dataset[currentLang];
       });
       langToggle.textContent = currentLang === 'en' ? 'తెలుగు' : 'English';
-      musicToggle.textContent = musicOn
-        ? (currentLang === 'en' ? 'Music On' : 'సంగీతం ఆన్')
-        : (currentLang === 'en' ? 'Music Off' : 'సంగీతం ఆఫ్');
     }
 
     langToggle.addEventListener('click', toggleLanguage);
-
-    musicToggle.addEventListener('click', async () => {
-      if (!bgMusic.querySelector('source').src) {
-        alert(currentLang === 'en'
-          ? 'Add your MP3 link inside the <audio> source tag to enable background music.'
-          : 'బ్యాక్‌గ్రౌండ్ సంగీతం కోసం <audio> source tag లో మీ MP3 లింక్ జోడించండి.');
-        return;
-      }
-      try {
-        if (!musicOn) {
-          await bgMusic.play();
-          musicOn = true;
-        } else {
-          bgMusic.pause();
-          musicOn = false;
-        }
-        musicToggle.textContent = musicOn
-          ? (currentLang === 'en' ? 'Music On' : 'సంగీతం ఆన్')
-          : (currentLang === 'en' ? 'Music Off' : 'సంగీతం ఆఫ్');
-      } catch (e) {
-        console.log(e);
-      }
-    });
 
     shareBtn.addEventListener('click', async () => {
       const shareData = {
